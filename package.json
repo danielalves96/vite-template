@@ -1,0 +1,94 @@
+{
+  "name": "react-ts-vite-template",
+  "version": "0.0.0",
+  "author": {
+    "name": "Daniel Luiz Alves",
+    "url": "https://github.com/fabien-ml"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "build": "npm run typecheck && vite build",
+    "commit": "git-cz",
+    "dev": "vite --port 8080",
+    "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
+    "lint": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
+    "prepare": "husky install",
+    "serve": "npm run build && vite preview --port 8080",
+    "test:e2e": "start-server-and-test serve http://127.0.0.1:8080/ 'cypress open'",
+    "test:e2e:ci": "start-server-and-test serve http://127.0.0.1:8080/ 'cypress run'",
+    "test:unit": "jest --watch",
+    "test:unit:ci": "jest",
+    "test:unit:coverage": "jest --silent --watchAll=false --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.{css,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "eslint",
+      "prettier --write"
+    ],
+    "package.json": "npx sort-package-json"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "antd": "^5.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.1",
+    "@commitlint/config-conventional": "^18.4.0",
+    "@commitlint/cz-commitlint": "^18.4.1",
+    "@cypress/vite-dev-server": "^5.0.6",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.0",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "@vitejs/plugin-react": "^4.1.1",
+    "autoprefixer": "^10.4.16",
+    "commitizen": "^4.3.0",
+    "cypress": "^13.5.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.6.0",
+    "eslint-plugin-jest-dom": "^5.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-testing-library": "^6.1.2",
+    "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.1.0",
+    "postcss": "^8.4.31",
+    "prettier": "3.0.3",
+    "sort-package-json": "^2.6.0",
+    "start-server-and-test": "^2.0.2",
+    "tailwindcss": "^3.3.5",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  }
+}

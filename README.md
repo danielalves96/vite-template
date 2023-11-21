@@ -13,8 +13,8 @@ A modern minimal Vite + React + TypeScript template with pre-configured ESLint, 
 - ⚙️ [Jest](https://jestjs.io/) - Testing libraries
 - 📑 [Commitlint](https://commitlint.js.org/) - Linting your commits based on commit convention
 - 🐜 [Ant design](https://ant.design/) - Provides plenty of UI components to enrich your web applications
-- 💨 [Tailwind](https://tailwindcss.com/)
-- 🐄 [i18next](i18next) - An internationalization-framework written in and for JavaScript
+- 💨 [Tailwind](https://tailwindcss.com/) - CSS framework for rapidly building modern websites
+- 🐄 [i18next](https://www.i18next.com/) - An internationalization-framework written in and for JavaScript
 - 🌐 [Axios](https://axios-http.com/ptbr/docs/intro) - A simple promise based HTTP client for the browser.
 - ⌨️ Absolute Imports
 

@@ -6,7 +6,7 @@ dist/
 public/
 __mocks__/
 
-commitlint.config.js
-jest.config.js
-postcss.config.js
+commitlint.config.cjs
+jest.config.cjs
+postcss.config.cjs
 *.d.ts

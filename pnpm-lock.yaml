@@ -14,6 +14,9 @@ dependencies:
   axios:
     specifier: ^1.6.2
     version: 1.6.2(debug@4.3.4)
+  commitlint-config-git-commit-emoji:
+    specifier: ^1.0.0
+    version: 1.0.0
   date-fns:
     specifier: ^2.30.0
     version: 2.30.0
@@ -3885,6 +3888,10 @@ packages:
     transitivePeerDependencies:
       - typescript
     dev: true
+
+  /commitlint-config-git-commit-emoji@1.0.0:
+    resolution: {integrity: sha512-AnWvAu50BZ2ikzlsECKya4nAvPdu62RC3U/8wmb8TlSiLbaLrz10jV8On/8tc2UW1C9ckuLQx3WkLhaiFcvPhg==}
+    dev: false
 
   /common-tags@1.8.2:
     resolution: {integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==}

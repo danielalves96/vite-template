@@ -27,24 +27,27 @@ A modern minimal Vite + React + TypeScript template with pre-configured ESLint, 
 
 ```bash
 pnpm install
+```
 
+```bash
 pnpm dev
 ```
 
 ## Available commands
 
-<p>In this project, you can run the following scripts:</p>
+In this project, you can run the following scripts:
 
 | Script                    | Description                                         |
 | ------------------------- | --------------------------------------------------- |
 | `pnpm dev`                | Runs the app in the development mode.               |
-| `pnpm build`              | Builds the app for production to the `dist` folder  |
-| `pnpm start`              | Run a locally server                                |
-| `pnpm lint`               | Runs the Eslint and show code problems              |
-| `pnpm format`             | Runs the Prettier and fix code style                |
+| `pnpm build`              | Builds the app for production to the `dist` folder. |
+| `pnpm start`              | Run a locally server.                               |
+| `pnpm lint`               | Runs the Eslint and show code problems.             |
+| `pnpm format`             | Runs the Prettier and fix code style.               |
 | `pnpm test:e2e`           | Run the app tests.                                  |
 | `pnpm test:e2e:ci`        | Run the app tests.                                  |
 | `pnpm test`               | Run the app tests.                                  |
 | `pnpm test:unit:coverage` | Run the app tests.                                  |
 | `pnpm typecheck`          | Check the types os application.                     |
 | `pnpm commit`             | Open the CZ CLI to create a message to your commit. |
+| `pnpm release`            | Generate release notes.                             |

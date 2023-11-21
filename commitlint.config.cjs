@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['git-commit-emoji'],
+  extends: ['cz-emoji'],
 };

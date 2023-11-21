@@ -1,6 +1,6 @@
 {
   "name": "react-ts-vite-template",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "author": {
     "name": "Daniel Luiz Alves",
@@ -23,7 +23,8 @@
     "test:unit": "jest --watch",
     "test:unit:ci": "jest",
     "test:unit:coverage": "jest --silent --watchAll=false --coverage",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "release": "standard-version"
   },
   "lint-staged": {
     "*.{css,md,json}": [
@@ -66,7 +67,7 @@
     "@types/react-dom": "^18.2.16",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
-    "@vitejs/plugin-legacy": "^5.0.0",
+    "@vitejs/plugin-legacy": "^5.1.0",
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.16",
     "commitizen": "^4.3.0",
@@ -92,10 +93,11 @@
     "postcss": "^8.4.31",
     "prettier": "3.1.0",
     "sort-package-json": "^2.6.0",
+    "standard-version": "^9.5.0",
     "start-server-and-test": "^2.0.3",
     "tailwindcss": "^3.3.5",
     "ts-jest": "^29.1.1",
     "typescript": "^5.3.2",
-    "vite": "^5.0.1"
+    "vite": "^5.0.2"
   }
 }
